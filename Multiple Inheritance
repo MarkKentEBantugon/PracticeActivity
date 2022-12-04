@@ -1,0 +1,24 @@
+# inheritance/mropractice
+# with multiple inheritance
+
+class Manager:
+  managername = ""
+  
+  def manager(self):
+    print(self.managername)
+    
+class Employee:
+  employeename = ""
+  
+  def employee(self):
+    print(self.employeename)
+    
+class Client(Manager, Employee):
+  def to_apply(self):
+    print('The Manager is ', self.managername)
+    print('The Employee is ', self.employeename)
+
+C1 = Client()
+C1.managername = 'Mark Bantugon'
+C1.employeename = 'Kent Bantugon'
+C1.to_apply()
