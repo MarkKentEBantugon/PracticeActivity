@@ -1,0 +1,19 @@
+# inheritance/mro-mixinpractice
+# mro (Method Resulotion Order)
+
+class A:
+  def get(self):
+    print('money=100')
+    
+class B:
+  def get(self):
+    print('money=200')
+    
+class C:
+  pass
+    
+class M(C, A, B):
+  pass
+
+money=M()
+money.get()
