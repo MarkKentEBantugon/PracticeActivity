@@ -3,11 +3,11 @@
 
 class A:
   def get(self):
-    print('money=100')
+    print('money=500')
     
 class B:
   def get(self):
-    print('money=200')
+    print('money=1000')
     
 class C:
   pass
